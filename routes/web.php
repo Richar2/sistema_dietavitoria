@@ -10,11 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/empresa', function(){
-    return 'Pg Empresa';
-} );
 
+Route::get('/categoria/(id)','SiteController@categoria');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','siteController@index');
+Route::post('/cadastro','siteController@cadastro');
