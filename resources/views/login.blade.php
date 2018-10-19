@@ -11,10 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <h1>tela de login</h1>
-        @foreach($alunos as $aluno)
-    <tr>{{$aluno->nome }}</tr> 
-        
-        @endforeach
+    
         
     </body>
 </html>

@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/categoria/(id)','SiteController@categoria');
+Route::get('/','SiteController@test');
 
-Route::get('/','siteController@index');
-Route::post('/cadastro','siteController@cadastro');
+

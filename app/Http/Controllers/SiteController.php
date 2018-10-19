@@ -7,19 +7,24 @@ use App\Models\aluno;
 
 class SiteController extends Controller
 {
-    public function index(aluno $aluno){
-        $alunos = $aluno->all();
+    private $aluno;
+    
+    public function __construct(aluno $aluno) {
+        $this->aluno= $aluno  ;
+    }
+
+    
+
+
+
+
+
+    public function test(){
         
-        return view('alunos.index', compact($alunos));   
+        $prod=$this->aluno->find(25);
+        dd($prod);
     }
- 
-    public function cadastro(){
-        return 'pag cadastro';
-    }
-    
-    public function categoria($id=1){
-        return"categoria($id)";
-    }
-    
+        
+      
     
 }
