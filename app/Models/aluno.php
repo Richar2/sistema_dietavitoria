@@ -10,7 +10,10 @@ class aluno extends Model
     
      protected $fillable=[
         'Id',
-        'idx_1',
-        'idx_2'
+        'TurmaId',
+        'TipoCompulsaoId',
+         'FamiliaId',
+         'VicioId',
+         'ClinicoId'
     ];
 }
