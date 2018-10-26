@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\aluno;
+use App\Models\Aluno;
 use App\Models\Clinico;
 use App\Models\Familia;
 use App\Models\Tipo_compulsao;
@@ -19,7 +19,7 @@ class SiteController extends Controller
 {
     private $aluno;
     
-    public function __construct(aluno $aluno) {
+    public function __construct(Aluno $aluno) {
         $this->aluno= $aluno  ;
     }
 
