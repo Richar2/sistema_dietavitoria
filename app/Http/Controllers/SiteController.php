@@ -17,16 +17,12 @@ use App\Models\Turma;
 
 class SiteController extends Controller
 {
-    private $aluno;
-    
-    public function __construct(Aluno $aluno) {
-        $this->aluno= $aluno  ;
-    }
+ 
 
     
 
     public function cadastro(){
-        return view();
+        return view('sistema.cadastro');
     }
 
     

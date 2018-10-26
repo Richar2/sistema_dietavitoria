@@ -12,7 +12,8 @@ and open the template in the editor.
     </head>
     <body>
          @yield('content')
+    
     </body>
-    <script src="" >
+    
     
 </html>
