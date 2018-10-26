@@ -7,9 +7,12 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
         <title></title>
     </head>
     <body>
-      @
+         @yield('content')
     </body>
+    <script src="" >
+    
 </html>

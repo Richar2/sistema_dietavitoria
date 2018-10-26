@@ -25,10 +25,11 @@ class SiteController extends Controller
 
     
 
+    public function cadastro(){
+        return view();
+    }
 
-
-
-
+    
     public function test(){
         
         $prod=$this->aluno->find(25);

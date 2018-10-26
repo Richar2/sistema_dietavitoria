@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/','SiteController@test');
+Route::get('/','SiteController@cadastro');
 Route::get('/acompanhamento','AcompanhamentoController@test');
 
 
