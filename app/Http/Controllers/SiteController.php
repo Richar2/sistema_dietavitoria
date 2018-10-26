@@ -4,6 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\aluno;
+use App\Models\Clinico;
+use App\Models\Familia;
+use App\Models\Tipo_compulsao;
+use App\Models\Tipo_vicio;
+use App\Models\Turma;
+
+
+
+
+
 
 class SiteController extends Controller
 {

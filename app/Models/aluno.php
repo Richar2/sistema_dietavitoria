@@ -8,12 +8,4 @@ class aluno extends Model
 {
     protected $table ='aluno';
     
-     protected $fillable=[
-        'Id',
-        'TurmaId',
-        'TipoCompulsaoId',
-         'FamiliaId',
-         'VicioId',
-         'ClinicoId'
-    ];
 }
