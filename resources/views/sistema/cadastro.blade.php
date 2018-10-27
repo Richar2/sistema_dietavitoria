@@ -1,6 +1,9 @@
 @extends('templates.template')
 
 @section('content')
+
+<h1>Cadastro</h1>
+
 <div class="topo alert alert-info" role="alert">
     
     <span style="float:right;"><a href="javascript:history.back()" style="color:white;text-decoration:none;font-size:15px;font-weight:bold">Voltar</a></span>
