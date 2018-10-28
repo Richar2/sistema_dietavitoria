@@ -9,7 +9,7 @@ class Familia extends Model
     protected $table= 'familia'; 
 
     public function aluno(){
-        
+        return $this->belongsTo('App\Models\Aluno', 'FamiliaId', 'Id');
     }
     
     

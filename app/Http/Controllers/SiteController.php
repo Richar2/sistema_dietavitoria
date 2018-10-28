@@ -17,7 +17,9 @@ use App\Models\Turma;
 
 class SiteController extends Controller
 {
- 
+      public function __construct(aluno $aluno) {
+        $this->aluno= $aluno  ;
+    }
 
     
 
