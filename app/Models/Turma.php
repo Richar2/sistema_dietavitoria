@@ -7,6 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Turma extends Model
 {
     protected $table= 'turma'; 
+    protected $fillable=[
+        'nome',
+        'Lotacao',
+        'Horario',
+        'DiaId',
+        'Ativo',
+        'excluido'
+    ];
 
     public function aluno(){
         return $this->belongsTo('App\Models\Aluno', 'TurmaId', 'Id');

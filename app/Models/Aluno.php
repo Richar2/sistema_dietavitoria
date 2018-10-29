@@ -7,7 +7,51 @@ use Illuminate\Database\Eloquent\Model;
 class Aluno extends Model
 {
     protected $table= 'aluno';
-    
+    protected $fillable=[
+        'nome',
+        'sobrenome',
+        'Cpf',
+        'DataNascimento',
+        'Email',
+        'Altura',
+        'Telefone',
+        'TurmaId',
+        'endereco',
+        'DataCadastro',
+        'DataAtualizacao',
+        'Numero',
+        'Cep' , 
+        'bairro',
+        'complemento',
+        'userfacebook',  
+        'QuantidadeFilhos',
+        'HorarioMaiorApetite',   
+        'MenstruacaoIrregular',
+        'ClinicoId',
+        'hasCompulsao',
+        'hasVicio',
+        'VicioId',
+        'ConsistenciaFecalId',
+        'TipoCompulsaoId',   
+        'FamiliaId',
+        'obs',
+        'Celular',
+        'AtivoId',
+        'PesoIdeal',
+        'Peso',
+        'Cintura',
+        'Coxa',
+        'Quadril',
+        'DataPrimeiraAula',
+        'profissao',
+        'sexo',
+        'cidade',
+        'star',
+        'gold_medal',
+        'silver_medal',
+        'excluido',
+        'NivelDeAtividade'
+        ];
     
 
 
