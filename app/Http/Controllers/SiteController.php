@@ -14,26 +14,38 @@ use App\Models\Turma;
 
 
 
-
 class SiteController extends Controller
 {
-      public function __construct(aluno $aluno) {
-        $this->aluno= $aluno  ;
-    }
-
     
-
+    
+  
+    public function savecad(){
+       $dataform; 
+    }
+        
+ 
     public function cadastro(){
         return view('sistema.cadastro');
     }
-
     
+    public function updatecad(){
+        
+    }
+     
+    public function cadturma(){
+        
+    }
+
     public function test(){
         
-        $prod=$this->aluno->find(25);
-        dd($prod);
-    }
+    $aluno= Aluno::find(30);
+    
         
-      
+    echo $aluno->nome;
+    
+    $familia= $aluno->familia ;
+    echo"<hr>{$familia->obs}";
+    
+    }
     
 }

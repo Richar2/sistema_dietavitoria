@@ -9,8 +9,9 @@ class Familia extends Model
     protected $table= 'familia'; 
 
     public function aluno(){
-        return $this->belongsTo('App\Models\Aluno', 'FamiliaId', 'Id');
+        return $this->hasOne(Aluno::class);
     }
+  
     
     
     
