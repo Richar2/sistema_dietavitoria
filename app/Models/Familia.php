@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Familia extends Model
 {
+    protected $primaryKey = 'id';
     protected $table= 'familia'; 
     protected $fillable=[
         'hasObesidade',

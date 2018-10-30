@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Aluno extends Model
 {
+    protected $primaryKey = 'id';
     protected $table= 'aluno';
     protected $fillable=[
         'nome',

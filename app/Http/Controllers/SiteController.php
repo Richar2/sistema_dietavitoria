@@ -19,8 +19,33 @@ class SiteController extends Controller
     
     
   
-    public function savecad(){
-       $dataform; 
+    public function savecad(Request $request){
+        
+        //pega dados do formulario
+        $dataform =$request->all();
+        
+       // $aluno= Aluno::create($dataform);
+        
+        //$clinico=$aluno->clinico->create($dataform);
+        //$familia=$aluno->familia->create($dataform);
+        //$tipocompulsao=$aluno->tipocompulsao->create($dataform);
+        //$tipovicio=$aluno->tipovicio->create($dataform);
+        //$turma=$aluno->turma->create($dataform);
+        
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      dd($request->all()); 
     }
         
  
@@ -30,6 +55,7 @@ class SiteController extends Controller
     
     public function updatecad(){
         
+        return view('sistema.acompanhamento');
     }
      
     public function cadturma(){
@@ -38,13 +64,13 @@ class SiteController extends Controller
 
     public function test(){
         
-    $aluno= Aluno::find(30);
+    //(30);
     
         
-    echo $aluno->nome;
+  //  echo $aluno->nome;
     
-    $familia= $aluno->familia ;
-    echo"<hr>{$familia->obs}";
+    //$familia= $aluno->familia ;
+    //echo"<hr>{$familia->obs}";
     
     }
     

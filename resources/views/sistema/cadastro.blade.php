@@ -9,18 +9,14 @@
     <span style="float:right;"><a href="javascript:history.back()" style="color:white;text-decoration:none;font-size:15px;font-weight:bold">Voltar</a></span>
 </div>
 
-<form action="action/alunos_action.php" method="post">
-<input type="hidden" name="AlunoId" id="AlunoId" value="" />    
-<input type="hidden" name="familiaId" id="familiaId" value="" />    
-<input type="hidden" name="tipoCompulsaoId" id="tipoCompulsaoId" value="" />    
-<input type="hidden" name="vicioId" id="vicioId" value="" />    
-<input type="hidden" name="clinicoId" id="clinicoId" value="" />    
+<form  method="post" action={{url('/cadastro/savecad')}}>
+  {{ csrf_field() }}
 
     <div class="panel panel-info">
         <div class="panel-body">
             <div class="form-group">
                 <label>Nome:</label>
-                <input type="text" name="Nome" id="Nome" class="form-control" value="" />
+                <input type="text" name="nome" id="Nome" class="form-control" value="" />
             </div>
 
             <div class="form-group">
