@@ -9,16 +9,30 @@ use App\Models\Familia;
 use App\Models\Tipo_compulsao;
 use App\Models\Tipo_vicio;
 use App\Models\Turma;
-
+use App\Models\Acompanhamento;
 
 
 
 
 class SiteController extends Controller
 {
-    
-    
-  
+      
+     
+     
+
+   
+
+
+
+      public function __construct() {
+          
+         
+          
+          
+          
+    }
+
+
     public function savecad(Request $request){
         
         //pega dados do formulario
@@ -45,7 +59,7 @@ class SiteController extends Controller
         
         
         
-      dd($request->all()); 
+     echo dd($turma); 
     }
         
  
@@ -62,16 +76,10 @@ class SiteController extends Controller
         
     }
 
-    public function test(){
-        
-    //(30);
-    
-        
-  //  echo $aluno->nome;
-    
-    //$familia= $aluno->familia ;
-    //echo"<hr>{$familia->obs}";
-    
+    public function test(Acompanhamento $acompanhamento){
+        $acompanhamentos=$acompanhamento->all();
+        return view ('sistema.list',compact('acompanhamentos'));
+    //echo dd($acompanhamento);
     }
     
 }
