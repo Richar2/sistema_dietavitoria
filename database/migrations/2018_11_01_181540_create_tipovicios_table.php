@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateTipocompulsaoTable extends Migration {
+class CreateTipoviciosTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,11 +12,12 @@ class CreateTipocompulsaoTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('tipocompulsao', function(Blueprint $table)
+		Schema::create('tipovicios', function(Blueprint $table)
 		{
 			$table->integer('Id', true);
-			$table->boolean('hasCompulsaoDoce', 1);
-			$table->boolean('hasCompulsaoSalgado', 1);
+			$table->boolean('hasTabagismo', 1);
+			$table->boolean('hasAlcool', 1);
+			$table->boolean('hasOutros', 1);
 		});
 	}
 
@@ -28,7 +29,7 @@ class CreateTipocompulsaoTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('tipocompulsao');
+		Schema::drop('tipovicios');
 	}
 
 }

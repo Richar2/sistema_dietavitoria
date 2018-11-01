@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateClinicoTable extends Migration {
+class CreateClinicosTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateClinicoTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('clinico', function(Blueprint $table)
+		Schema::create('clinicos', function(Blueprint $table)
 		{
 			$table->integer('Id', true);
 			$table->boolean('hasAnsiedade', 1);
@@ -38,7 +38,7 @@ class CreateClinicoTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('clinico');
+		Schema::drop('clinicos');
 	}
 
 }

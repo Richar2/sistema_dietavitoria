@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateLogActionTable extends Migration {
+class CreateLogActionsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateLogActionTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('log_action', function(Blueprint $table)
+		Schema::create('log_actions', function(Blueprint $table)
 		{
 			$table->integer('id', true);
 			$table->string('desc', 225)->nullable();
@@ -27,7 +27,7 @@ class CreateLogActionTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('log_action');
+		Schema::drop('log_actions');
 	}
 
 }

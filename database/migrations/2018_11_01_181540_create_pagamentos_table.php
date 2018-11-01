@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreatePagamentoTable extends Migration {
+class CreatePagamentosTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreatePagamentoTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('pagamento', function(Blueprint $table)
+		Schema::create('pagamentos', function(Blueprint $table)
 		{
 			$table->integer('id', true);
 			$table->integer('aluno_id')->nullable();
@@ -34,7 +34,7 @@ class CreatePagamentoTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('pagamento');
+		Schema::drop('pagamentos');
 	}
 
 }

@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateAcompanhamentoTable extends Migration {
+class CreateAcompanhamentosTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateAcompanhamentoTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('acompanhamento', function(Blueprint $table)
+		Schema::create('acompanhamentos', function(Blueprint $table)
 		{
 			$table->integer('Id', true);
 			$table->decimal('Peso', 5)->nullable();
@@ -47,7 +47,7 @@ class CreateAcompanhamentoTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('acompanhamento');
+		Schema::drop('acompanhamentos');
 	}
 
 }

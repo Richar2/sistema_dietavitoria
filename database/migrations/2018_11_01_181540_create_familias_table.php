@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateFamiliaTable extends Migration {
+class CreateFamiliasTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateFamiliaTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('familia', function(Blueprint $table)
+		Schema::create('familias', function(Blueprint $table)
 		{
 			$table->integer('Id', true);
 			$table->boolean('hasObesidade', 1);
@@ -38,7 +38,7 @@ class CreateFamiliaTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('familia');
+		Schema::drop('familias');
 	}
 
 }

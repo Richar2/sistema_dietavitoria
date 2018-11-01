@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateAlunoTable extends Migration {
+class CreateAlunosTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateAlunoTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('aluno', function(Blueprint $table)
+		Schema::create('alunos', function(Blueprint $table)
 		{
 			$table->integer('Id', true);
 			$table->string('nome', 225)->nullable();
@@ -70,7 +70,7 @@ class CreateAlunoTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('aluno');
+		Schema::drop('alunos');
 	}
 
 }

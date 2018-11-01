@@ -38,14 +38,58 @@ class SiteController extends Controller
         //pega dados do formulario
         $dataform =$request->all();
         
-       // $aluno= Aluno::create($dataform);
-        
-        //$clinico=$aluno->clinico->create($dataform);
-        //$familia=$aluno->familia->create($dataform);
-        //$tipocompulsao=$aluno->tipocompulsao->create($dataform);
-        //$tipovicio=$aluno->tipovicio->create($dataform);
-        //$turma=$aluno->turma->create($dataform);
-        
+  "nome" => 
+  "Sobrenome" => 
+  "Sexo" => 
+  "Profissao" => 
+  "Cpf" => 
+  "DataNascimento" => 
+  "Email" => 
+  "Endereco" => 
+  "Numero" => 
+  "Complemento" => 
+  "Cep" => 
+  "Bairro" => 
+  "Cidade" => 
+  "Telefone" => 
+  "Celular" => 
+  "QuantidadeFilhos" => 
+  "Altura" => 
+  "Peso" => 
+  "PesoIdeal" => 
+  "Cintura" => 
+  "Quadril" => 
+  "Coxa" => 
+  "UserFacebook" => 
+  "DataPrimeiraAula" => 
+  "Ativo" => 
+  "hasAnsiedade" => 
+  "hasInsonia" => 
+  "hasHipertensao" => 
+  "hasDiabetes" => 
+  "hasAlergias" => 
+  "hasDisturbiosOncologicos" => 
+  "hasProblemasRenais" => 
+  "hasMenopausa" => 
+  "hasOutros" => 
+  "hasHipotiroidismo" =>
+  "hasColesterol" => 
+  "hasFigado" => 
+  "ConsistenciaFecalId" => 
+  "NivelDeAtividade" => 
+  "Obs" => 
+  "familiaHasObesidade" => 
+  "familiaHasDoencaRenal" => 
+  "familiaHasHipertensao" => 
+  "familiaHasColesterolGorduraFigado" =>
+  "familiaHasHipotiroidismo" => 
+  "familiaHasAlteracaoGlicerides" => 
+  "familiaHasBulimia" => 
+  "familiaHasCompulsaoAlimentar" => 
+  "hasVicio" => 
+  "hasIntoleranciaLactose" => 
+  "hasIntoleranciaGluten" => 
+  "FamiliaObs" => 
         
         
        
@@ -59,7 +103,7 @@ class SiteController extends Controller
         
         
         
-     echo dd($turma); 
+     echo dd($dataform); 
     }
         
  

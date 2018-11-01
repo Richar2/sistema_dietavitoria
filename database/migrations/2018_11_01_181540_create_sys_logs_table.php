@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateSysLogTable extends Migration {
+class CreateSysLogsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateSysLogTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('sys_log', function(Blueprint $table)
+		Schema::create('sys_logs', function(Blueprint $table)
 		{
 			$table->integer('id', true);
 			$table->integer('action')->nullable();
@@ -34,7 +34,7 @@ class CreateSysLogTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('sys_log');
+		Schema::drop('sys_logs');
 	}
 
 }

@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateTurmaTable extends Migration {
+class CreateTurmasTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateTurmaTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('turma', function(Blueprint $table)
+		Schema::create('turmas', function(Blueprint $table)
 		{
 			$table->integer('Id', true);
 			$table->string('nome', 225)->nullable();
@@ -33,7 +33,7 @@ class CreateTurmaTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('turma');
+		Schema::drop('turmas');
 	}
 
 }
