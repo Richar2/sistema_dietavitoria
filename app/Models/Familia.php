@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Familia extends Model
 {
-    protected $primaryKey = 'id';
-    protected $table= 'familia'; 
+    protected $primaryKey = 'id'; 
     protected $fillable=[
         'hasObesidade',
         'hasDoencaRenal',
@@ -19,7 +18,8 @@ class Familia extends Model
         'hasCompulsaoAlimentar',
         'hasIntoleranciaLactose',
         'hasIntoleranciaGluten',
-        'hasVicios'
+        'hasVicios',
+        'obs'
         
         ];
     

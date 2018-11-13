@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Turma extends Model
 {
     protected $primaryKey = 'id';
-    protected $table= 'turma'; 
     protected $fillable=[
         'nome',
         'Lotacao',

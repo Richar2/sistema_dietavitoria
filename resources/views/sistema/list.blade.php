@@ -3,15 +3,18 @@
 @section('content')
 
 
-<h1>List</h1>
+<h1 class="titul-pg">List</h1>
 
-<table>
+<table class="table table-striped">
     <tr>
-        <th>AlunoId</th>
+        <th>Id</th>
+        <th>Nome</th>
+        
     </tr>
-    @foreach($acompanhamentos as $acompanhamento)
+    @foreach($alunos as $aluno)
     <tr>
-        <td>{{$acompanhamento->AlunoId}}</td>
+        <td>{{$aluno->Id}}</td>
+        <td>{{$aluno->nome}}</td>
         
         
         
@@ -22,3 +25,4 @@
     
     
 </table>
+  {!!$alunos->links()!!}

@@ -19,111 +19,64 @@ class SiteController extends Controller
       
      
      
+    private $acompanhamento ;
+    private $aluno;   
 
-   
 
 
-
-      public function __construct() {
-          
-         
+      public function __construct(Acompanhamento $acampanhamento, Aluno $aluno) 
+      {
+         $this->acompanhamento=$acampanhamento;
+         $this->aluno=$aluno;
           
           
           
     }
 
-
-    public function savecad(Request $request){
-        
-        //pega dados do formulario
-        $dataform =$request->all();
-        
-  "nome" => 
-  "Sobrenome" => 
-  "Sexo" => 
-  "Profissao" => 
-  "Cpf" => 
-  "DataNascimento" => 
-  "Email" => 
-  "Endereco" => 
-  "Numero" => 
-  "Complemento" => 
-  "Cep" => 
-  "Bairro" => 
-  "Cidade" => 
-  "Telefone" => 
-  "Celular" => 
-  "QuantidadeFilhos" => 
-  "Altura" => 
-  "Peso" => 
-  "PesoIdeal" => 
-  "Cintura" => 
-  "Quadril" => 
-  "Coxa" => 
-  "UserFacebook" => 
-  "DataPrimeiraAula" => 
-  "Ativo" => 
-  "hasAnsiedade" => 
-  "hasInsonia" => 
-  "hasHipertensao" => 
-  "hasDiabetes" => 
-  "hasAlergias" => 
-  "hasDisturbiosOncologicos" => 
-  "hasProblemasRenais" => 
-  "hasMenopausa" => 
-  "hasOutros" => 
-  "hasHipotiroidismo" =>
-  "hasColesterol" => 
-  "hasFigado" => 
-  "ConsistenciaFecalId" => 
-  "NivelDeAtividade" => 
-  "Obs" => 
-  "familiaHasObesidade" => 
-  "familiaHasDoencaRenal" => 
-  "familiaHasHipertensao" => 
-  "familiaHasColesterolGorduraFigado" =>
-  "familiaHasHipotiroidismo" => 
-  "familiaHasAlteracaoGlicerides" => 
-  "familiaHasBulimia" => 
-  "familiaHasCompulsaoAlimentar" => 
-  "hasVicio" => 
-  "hasIntoleranciaLactose" => 
-  "hasIntoleranciaGluten" => 
-  "FamiliaObs" => 
-        
-        
+    
+    //faz a listagem de alulos 
+    Public function searchAluno() 
+    {
+      $title='Lista de Alunos';
        
+        $alunos=$this->aluno->paginate(30);
+        //dd($alunos);
+      return view('sistema.list', compact('alunos'));
+    }
+     
+     public function savecad(Request $request)
+    {
+ 
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-     echo dd($dataform); 
     }
         
  
-    public function cadastro(){
+    public function cadastro()
+    {
         return view('sistema.cadastro');
     }
     
-    public function updatecad(){
+    public function updatecad()
+    {
         
         return view('sistema.acompanhamento');
     }
      
-    public function cadturma(){
+    public function cadturma()
+    {
         
     }
 
-    public function test(Acompanhamento $acompanhamento){
-        $acompanhamentos=$acompanhamento->all();
-        return view ('sistema.list',compact('acompanhamentos'));
-    //echo dd($acompanhamento);
+    public function acompanhamento(){
+        $chave=886;
+       //$acompanhamento=$this->acompanhamento->whereChave($chave)->orderBy('alunoId', 'desc')->first();
+        
+        //$acompanhamento=$this->acompanhamento->orderBy(886);
+        //$model->whereChave($chave)->latest()->first()
+       $acompanhamento=Acompanhamento::where('alunoId', $chave)->orderBy('Data', 'desc' )->first();
+       
+      
+        // dd($acompanhamento); 
+      return view ('sistema.acompanhamento',compact('acompanhamento'));   
+      }
     }
-    
-}

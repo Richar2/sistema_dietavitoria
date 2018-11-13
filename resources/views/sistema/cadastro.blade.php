@@ -325,17 +325,17 @@
                 </ul>
                 <ul class="familia">
                     <li>
-                        <b>Vícios:</b>&nbsp;<input type="radio" name="hasVicio" id="hasVicio_true" value="1"  />&nbsp;Sim&nbsp;<input type="radio" name="hasVicio" id="hasVicio_false" value="0"  />&nbsp;Não
+                        <b>Vícios:</b>&nbsp;<input type="radio" name="hasVicio" id="hasVicio_true" value="1"  />&nbsp;Sim&nbsp;<input type="radio" name="hasVicio" id="hasVicio_false" value="0" checked="0"   />&nbsp;Não
                     </li>
-                    <li><span class="tipoVicio" style="display: none">&nbsp;<input type="checkbox" name="hasAlcool" id="hasAlcool" value="1" />&nbsp;Álcool&nbsp;<input type="checkbox" name="hasTabagismo" id="hasTabagismo" value="1"  />&nbsp;Tabagismo&nbsp;<input type="checkbox" name="hasOutros" id="hasOutros" value="1" />&nbsp;Outros</span>
+                    <li><span class="tipoVichecked="0" cio" style="display: none">&nbsp;<input type="checkbox" name="hasAlcool" id="hasAlcool" value="1" />&nbsp;Álcool&nbsp;<input type="checkbox" name="hasTabagismo" id="hasTabagismo" value="1"  />&nbsp;Tabagismo&nbsp;<input type="checkbox" name="hasOutros" id="hasOutros" value="1" />&nbsp;Outros</span>
                     </li>
                 </ul>
                 <ul class="familia">
                     <li>
-                        <b>Intolerancia á lactose:</b>&nbsp;<input type="radio" name="hasIntoleranciaLactose" id="hasIntoleranciaLactose_true" value="1"  />&nbsp;Sim&nbsp;<input type="radio" name="hasIntoleranciaLactose" id="hasIntoleranciaLactose_false" value="0" />&nbsp;Não
+                        <b>Intolerancia á lactose:</b>&nbsp;<input type="radio" name="hasIntoleranciaLactose" id="hasIntoleranciaLactose_true" value="1"  />&nbsp;Sim&nbsp;<input type="radio" name="hasIntoleranciaLactose" id="hasIntoleranciaLactose_false" value="0" checked="0"  />&nbsp;Não
                     </li>
                     <li>
-                        <b>Intolerancia ao glúten:</b>&nbsp;<input type="radio" name="hasIntoleranciaGluten" id="hasIntoleranciaGluten_true" value="1" />&nbsp;Sim&nbsp;<input type="radio" name="hasIntoleranciaGluten" id="hasIntoleranciaGluten_false" value="0"  />&nbsp;Não
+                        <b>Intolerancia ao glúten:</b>&nbsp;<input type="radio" name="hasIntoleranciaGluten" id="hasIntoleranciaGluten_true" value="1" />&nbsp;Sim&nbsp;<input type="radio" name="hasIntoleranciaGluten" id="hasIntoleranciaGluten_false" value="0" checked="0"  />&nbsp;Não
                     </li>
                 </ul>
                 <div class="form-group section2">

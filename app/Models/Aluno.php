@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Aluno extends Model
 {
-    protected $primaryKey = 'id';
-    protected $table= 'aluno';
+    protected $primaryKey = 'Id';
     protected $fillable=[
         'nome',
         'sobrenome',
@@ -16,7 +15,6 @@ class Aluno extends Model
         'Email',
         'Altura',
         'Telefone',
-        'TurmaId',
         'endereco',
         'DataCadastro',
         'DataAtualizacao',
@@ -25,16 +23,10 @@ class Aluno extends Model
         'bairro',
         'complemento',
         'userfacebook',  
-        'QuantidadeFilhos',
-        'HorarioMaiorApetite',   
-        'MenstruacaoIrregular',
-        'ClinicoId',
+        'QuantidadeFilhos',  
         'hasCompulsao',
         'hasVicio',
-        'VicioId',
-        'ConsistenciaFecalId',
-        'TipoCompulsaoId',   
-        'FamiliaId',
+        'ConsistenciaFecalId', 
         'obs',
         'Celular',
         'AtivoId',
