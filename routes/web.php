@@ -11,7 +11,9 @@
 |
 */
 Route::match(['get', 'post'],'/cadastro/savecad','SiteController@savecad');
-Route::match(['get', 'post'],'/cadastro/savecad/test','SiteController@test');
-Route::get('/cadastro','SiteController@cadastro');
-Route::get('/acompanhamento','SiteController@updatecad');
+Route::match(['get', 'post'],'/cadastro/savecad/acompanhamento','SiteController@acompanhamento');
+
+Route::get('/dashboard/searchAluno','SiteController@searchAluno');
+Route::get('aluno','SiteController@acompanhamento');
+
 

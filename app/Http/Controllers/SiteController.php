@@ -68,15 +68,18 @@ class SiteController extends Controller
     }
 
     public function acompanhamento(){
-        $chave=886;
+        //recebe o id do aluno
+      $aluno=$this->aluno->find(35);
+      $chave=$aluno;
        //$acompanhamento=$this->acompanhamento->whereChave($chave)->orderBy('alunoId', 'desc')->first();
         
         //$acompanhamento=$this->acompanhamento->orderBy(886);
         //$model->whereChave($chave)->latest()->first()
-       $acompanhamento=Acompanhamento::where('alunoId', $chave)->orderBy('Data', 'desc' )->first();
+      $acompanhamento=Acompanhamento::where('alunoId', $chave)->orderBy('Data', 'desc' )->first();
        
       
-        // dd($acompanhamento); 
-      return view ('sistema.acompanhamento',compact('acompanhamento'));   
-      }
-    }
+     //dd($chave); 
+     return view ('sistema.acompanhamento',compact('aluno'));   
+     
+     }
+  }
