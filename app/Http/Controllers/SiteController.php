@@ -33,6 +33,12 @@ class SiteController extends Controller
           
           
     }
+    Public function login(){
+        
+        
+        return view('templates.login'); 
+    }
+
 
     
     //faz a listagem de alulos 
