@@ -21,12 +21,13 @@ class SiteController extends Controller
      
     private $acompanhamento ;
     private $aluno;   
+    private $turma;
 
 
-
-      public function __construct(Acompanhamento $acampanhamento, Aluno $aluno) 
+      public function __construct(Acompanhamento $acampanhamento, Aluno $aluno ,Turma $turma ) 
       {
-         $this->acompanhamento=$acampanhamento;
+        $this->turma=$turma;
+        $this->acompanhamento=$acampanhamento;
          $this->aluno=$aluno;
           
           
@@ -69,17 +70,21 @@ class SiteController extends Controller
 
     public function acompanhamento(){
         //recebe o id do aluno
-      $aluno=$this->aluno->find(35);
-      $chave=$aluno;
-       //$acompanhamento=$this->acompanhamento->whereChave($chave)->orderBy('alunoId', 'desc')->first();
+      
+     // $aluno=$this->aluno->find();
+      //$turmaAlu=$aluno->Turma;
+      $chave=85;
+      
+      //echo "<hr>{$turmaAlu->tnome}";
+      //$acompanhamento=$this->acompanhamento->whereChave($chave)->orderBy('alunoId', 'desc')->first();
         
         //$acompanhamento=$this->acompanhamento->orderBy(886);
         //$model->whereChave($chave)->latest()->first()
       $acompanhamento=Acompanhamento::where('alunoId', $chave)->orderBy('Data', 'desc' )->first();
        
       
-     //dd($chave); 
-     return view ('sistema.acompanhamento',compact('aluno'));   
+     // var_dump($acompanhamento); 
+     return view ('sistema.acompanhamento',compact('aluno','turmaAlu','acompanhamento'));   
      
      }
   }
