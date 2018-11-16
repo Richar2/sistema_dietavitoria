@@ -10,10 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::match(['get', 'post'],'/cadastro/savecad','SiteController@savecad');
-Route::match(['get', 'post'],'/cadastro/savecad/acompanhamento','SiteController@acompanhamento');
 
-Route::get('/dashboard/searchAluno','SiteController@searchAluno');
-Route::get('aluno','SiteController@acompanhamento');
+Route::get('/login', 'SiteController@login');
 
 
