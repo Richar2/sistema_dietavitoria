@@ -11,16 +11,14 @@ and open the template in the editor.
         <title></title>
        <link rel="stylesheet" href="{{asset('css/app.css')}}">
            
-
+       @yield('css-view')  
     </head>
     <body>
-        <div class="container">
-        
-            @yield('content')
-        
-        </div>      
-         
-          <script src="{{asset('js/app.js')}}"></script>  
+       
+             
+        @yield('conteudo-view')
+        @yield('js-view')
+     <script src="{{asset('js/app.js')}}"></script>  
     </body>
     
     

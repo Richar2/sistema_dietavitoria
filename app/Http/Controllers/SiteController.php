@@ -69,9 +69,9 @@ class SiteController extends Controller
         return view('sistema.acompanhamento');
     }
      
-    public function cadturma()
+    public function dash()
     {
-        
+       return view('sistema.dash');
     }
 
     public function acompanhamento(){
