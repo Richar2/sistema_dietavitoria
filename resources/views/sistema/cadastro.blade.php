@@ -1,20 +1,30 @@
 @extends('templates.template')
 
-@section('content')
+@section('css-view')
+@endsection
 
-<h1>Cadastro</h1>
+    
+@section('js-view')
+@endsection        
 
+@section('conteudo-view')
+
+
+
+
+        <h1>Cadastro</h1>
 <div class="topo alert alert-info" role="alert">
     
     <span style="float:right;"><a href="javascript:history.back()" style="color:white;text-decoration:none;font-size:15px;font-weight:bold">Voltar</a></span>
 </div>
+
 
 <form  method="post" action={{url('/cadastro/savecad')}}>
   {{ csrf_field() }}
 
     <div class="panel panel-info">
         <div class="panel-body">
-            <div class="form-group">
+            <div class="form-group ">
                 <label>Nome:</label>
                 <input type="text" name="nome" id="Nome" class="form-control" value="" />
             </div>
@@ -353,5 +363,6 @@
             <a href="javascript:history.back();" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span>&nbsp;Cancelar</a>
         </div>
     </div>
-</form>    
+ </form> 
+
 @endsection

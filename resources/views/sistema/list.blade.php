@@ -1,6 +1,13 @@
 @extends('templates.template')
 
-@section('content')
+@section('css-view')
+@endsection
+
+    
+@section('js-view')
+@endsection        
+
+@section('conteudo-view')
 
 
 <h1 class="titul-pg">List</h1>
@@ -26,3 +33,4 @@
     
 </table>
   {!!$alunos->links()!!}
+  @endsection

@@ -53,7 +53,7 @@ class SiteController extends Controller
      
      public function savecad(Request $request)
     {
- 
+         return '#form';
         
     }
         
@@ -69,6 +69,7 @@ class SiteController extends Controller
         return view('sistema.acompanhamento');
     }
      
+    
     public function dash()
     {
        return view('sistema.dash');

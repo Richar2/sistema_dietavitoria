@@ -1,18 +1,17 @@
 <nav id="principal">
-        {{ csrf_field() }}           
-        <ul>
+             <ul>
                  <li>
                     <a href="">
-                    <i class="fas fa-stroopwafel"></i>     
+                    <i class=""></i>     
                     <h3>Alunos</h3> 
                     </a> 
                  </li>
             
                    <li>
-                   <a href="{{url('/dash/cadastro')}}"> 
-                   <i class=></i>     
+                       <a href=""> 
+                       <i class=""></i>     
                        <h3>Cadastrar</h3>
-                    </a>  
+                       </a>  
                    </li>
                
                     
@@ -30,5 +29,10 @@
                        <h3>Pagamentos</h3>
                        </a>  
                    </li>
-                </ul>     
-        </nav>
+            </ul>      
+
+
+
+
+
+          </nav>

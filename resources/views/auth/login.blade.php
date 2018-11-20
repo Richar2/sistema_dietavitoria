@@ -17,6 +17,7 @@
             <h3>Adminstração de Alunos</h3>
             
             {!!Form::open(['route'=>'login','method'=>'post']) !!}
+             {{ csrf_field() }}
             <p>Fazer login</p>
             
             <label>
