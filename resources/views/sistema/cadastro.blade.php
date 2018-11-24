@@ -20,7 +20,7 @@
 
 
 <form  method="post" action={{url('/cadastro/savecad')}}>
-  {{ csrf_field() }}
+  {{csrf_field()}}
 
     <div class="panel panel-info">
         <div class="panel-body">
@@ -31,7 +31,7 @@
 
             <div class="form-group">
                 <label>Sobrenome:</label>
-                <input type="text" id="Sobrenome" name="Sobrenome" class="form-control" value="" />             
+                <input type="text" id="Sobrenome" name="sobrenome" class="form-control" value="" />             
             </div>
 
             <div class="form-group">
@@ -45,7 +45,7 @@
 
             <div class="form-group">
                 <label>Profissao:</label>
-                <input type="text" id="Profissao" name="Profissao" class="form-control" value="" />             
+                <input type="text" id="Profissao" name="profissao" class="form-control" value="" />             
             </div>
 
             <div class="form-group">
@@ -65,7 +65,7 @@
 
             <div class="form-group">
                 <label>Endereço:</label>
-                <input type="text" id="Endereco" name="Endereco" class="form-control" value="" /> 
+                <input type="text" id="Endereco" name="endereco" class="form-control" value="" /> 
             </div>
 
             <div class="form-group">
@@ -75,7 +75,7 @@
 
             <div class="form-group">
                 <label>Complemento:</label>
-                <input type="text" id="Complemento" name="Complemento" class="form-control" value="" /> 
+                <input type="text" id="Complemento" name="complemento" class="form-control" value="" /> 
             </div>
 
             <div class="form-group">
@@ -85,12 +85,12 @@
 
             <div class="form-group">
                 <label>Bairro:</label>
-                <input type="text" id="Bairro" name="Bairro" class="form-control" value="" /> 
+                <input type="text" id="Bairro" name="bairro" class="form-control" value="" /> 
             </div>
 
             <div class="form-group">
                 <label>Cidade:</label>
-                <input type="text" id="Cidade" name="Cidade" class="form-control" value="" /> 
+                <input type="text" id="Cidade" name="cidade" class="form-control" value="" /> 
             </div>
 
             <div class="form-group">
@@ -140,7 +140,7 @@
 
             <div class="form-group">
                 <label>Usuário Facebook:</label>
-                <input type="text" id="UserFacebook" name="UserFacebook" class="form-control" value="" /> 
+                <input type="text" id="UserFacebook" name="userfacebook" class="form-control" value="" /> 
             </div>
 
             <div class="form-group">
@@ -282,7 +282,7 @@
 
             <div class="form-group">
                 <label>Descreva:</label>
-                <input type="text" id="Obs" name="Obs" class="form-control" value="" />
+                <input type="text" id="Obs" name="obs" class="form-control" value="" />
             </div>
         </div>
     </div>

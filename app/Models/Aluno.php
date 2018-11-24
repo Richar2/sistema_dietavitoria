@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Aluno extends Model
 {
-    protected $primaryKey = 'Id';
+    public $timestamps = false;
+    protected $primaryKey = 'id';
     protected $fillable=[
         'nome',
         'sobrenome',
@@ -53,27 +54,27 @@ class Aluno extends Model
     public function familia()
     {
         
-        return $this->belongsTo(Familia::class, 'FamiliaId', 'Id');
+        return $this->belongsTo(Familia::class );
     }
     public function clinico()
     {
         
-        return $this->belongsTo(Clinico::class, 'ClinicoId', 'Id');
+        return $this->belongsTo(Clinico::class);
     }
      public function tipocompulsao()
     {
        
-        return $this->belongsTo(Tipo_compulsao::class, 'TipoCompulsaoId', 'Id');
+        return $this->belongsTo(Tipo_compulsao::class);
     }
      public function tipovicio()
     {
         
-        return $this->belongsTo(Tipo_vicio::class, 'VicioId', 'Id');
+        return $this->belongsTo(Vicio::class);
     }
      public function turma()
     {
         
-        return $this->belongsTo(Turma::class, 'TurmaId', 'Id');
+        return $this->belongsTo(Turma::class);
     }
      
     

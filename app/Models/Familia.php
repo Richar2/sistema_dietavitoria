@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Familia extends Model
 {
+    public $timestamps = false;
     protected $primaryKey = 'id'; 
     protected $fillable=[
         'hasObesidade',
@@ -19,7 +20,7 @@ class Familia extends Model
         'hasIntoleranciaLactose',
         'hasIntoleranciaGluten',
         'hasVicios',
-        'obs'
+        'FamiliaObs'
         
         ];
     

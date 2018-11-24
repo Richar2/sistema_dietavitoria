@@ -21,11 +21,15 @@
 //Route::post('/cadastro/savecad', 'SiteController@savecad');
 
 
-Route::get('/', function(){
-return view('auth.login');
-});
+Route::get('/','Auth\LoginController@autetinficado');
+Route::post('/cadastro/savecad', 'SiteController@savecad');
 Route::get('dash', 'SiteController@dash')->name('dash');
+Route::get('/dash/cadastro', 'SiteController@cadastro');
+Route::get('/dash/searchAluno', 'SiteController@searchAluno');
 Route::post('login','Auth\LoginController@login')->name('login');
+Route::post('logout','Auth\LoginController@logout')->name('logout');
+
+
 
 //Route::get('/', 'SiteController@login');
 //Route::post('/',['as' =>'user.login', 'HomeController@index']);

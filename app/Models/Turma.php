@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Turma extends Model
 {
+    public $timestamps = false;
     protected $primaryKey = 'id';
     protected $fillable=[
-        'nome',
+        'tnome',
         'Lotacao',
         'Horario',
         'DiaId',
@@ -17,7 +18,7 @@ class Turma extends Model
     ];
 
     public function aluno(){
-        return $this->belongsTo('App\Models\Aluno', 'TurmaId', 'Id');
+        return $this->belongsTo('App\Models\Aluno');
     }
     
     

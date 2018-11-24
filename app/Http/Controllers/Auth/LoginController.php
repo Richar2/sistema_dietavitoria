@@ -7,6 +7,24 @@ use Auth;
 
 class LoginController extends Controller
 {
+    
+    public function __construct()
+    {
+        $this->middleware('guest',['only' =>'autetinficado']);
+                
+    }
+    
+    
+    public function autetinficado()
+    {
+        return view('auth.login');
+        
+    }
+
+    
+
+
+
     public function login()
     {
      $auntentifiq=$this->validate(request(),[
@@ -21,7 +39,15 @@ class LoginController extends Controller
           return'login ou senha incorreto'; 
       
       }
-    }
+      public function logout()
+      {
+       Auth::logout();
+       
+       return redirect('/');
+      }
+              
+      
+     }
   
 
    

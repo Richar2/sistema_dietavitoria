@@ -10,10 +10,10 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title></title>
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
-       <link rel="stylesheet" href="{{asset('css/stilo_template.css')}}">  
-       <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
-       @yield('css-view')  
+        <link rel="stylesheet" href="{{asset('css/stilo_template.css')}}">  
+        <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"> 
+     @yield('css-view')  
     </head>
     <body>
         <nav id="principal">
@@ -21,7 +21,7 @@ and open the template in the editor.
             <ul>
                      <li>
                         <a href="{{url('/dash/searchAluno')}}">
-                        <i class=""></i>     
+                        <i class="fas fa-user-graduate"></i>     
                         <h3>Alunos</h3> 
                         </a> 
                      </li>
