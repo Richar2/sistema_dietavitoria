@@ -11,6 +11,7 @@ use App\Models\Vicio;
 use App\Models\Turma;
 use App\Models\Acompanhamento;
 use App\Models\Pagamento;
+use Carbon\Carbon;
 
 
 
@@ -89,7 +90,7 @@ class SiteController extends Controller
        
          $tipoco=       Tipo_compulsao::create($dataform);
          $turma=        Turma::create($dataform);
-         $vicio=     Vicio::create($dataform);
+         $vicio=        Vicio::create($dataform);
          $clinico=      Clinico::create($dataform);
          $familia=      Familia::create($dataform);
          $aluno=        Aluno::create ($dataform); 
@@ -103,8 +104,11 @@ class SiteController extends Controller
          $aluno->save();
         
         
+        if($aluno)
+          return redirect()->route('dash');
         
-         
+         else
+         return redirect()->back();
         
     
     }
@@ -154,23 +158,12 @@ class SiteController extends Controller
        return view('sistema.dash');
     }
 
-    public function acompanhamento(){
-        //recebe o id do aluno
-      
-     // $aluno=$this->aluno->find();
-      //$turmaAlu=$aluno->Turma;
-      $chave=85;
-      
-      //echo "<hr>{$turmaAlu->tnome}";
-      //$acompanhamento=$this->acompanhamento->whereChave($chave)->orderBy('alunoId', 'desc')->first();
-        
-        //$acompanhamento=$this->acompanhamento->orderBy(886);
-        //$model->whereChave($chave)->latest()->first()
-      $acompanhamento=Acompanhamento::where('alunoId', $chave)->orderBy('Data', 'desc' )->first();
-       
-      
-     // var_dump($acompanhamento); 
-     return view ('sistema.acompanhamento',compact('aluno','turmaAlu','acompanhamento'));   
+    public function acompanhamento($id){
+   
+
+
+
+     return view ('sistema.acompanhamento',compact('id','turmaAlu','acompanhamento'));   
      
      }
   }

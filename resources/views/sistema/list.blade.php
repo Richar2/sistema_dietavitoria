@@ -31,7 +31,7 @@
         <td></td>
         <td></td>
         <td>
-           <a href="" ><span class="fas fa-calculator"></span></a>
+           <a href="{{route('aluno.acompanhamento',$aluno->id)}}" ><span class="fas fa-calculator"></span></a>
            <a href="" ><span class="fas fa-user-edit" ></span></a>
            <a href="" ><span class="fas fa-money-bill-alt"></span></a>
            <a href="" ><span  class="fas fa-calendar-alt"></span></a> 

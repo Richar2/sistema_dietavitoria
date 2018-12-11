@@ -2,8 +2,14 @@
 
 @extends('templates.template')
 
-@section('content')
+@section('css-view')
+@endsection
 
+    
+@section('js-view')
+@endsection        
+
+@section('conteudo-view')
 <h1>Acompanhamento</h1>
 
 
@@ -16,8 +22,8 @@
     
         <div class="topo alert alert-info" role="alert">Histórico</div>
     
-    <span id="hist">
-        @foreach ($acompanhamentoos as $acompanhamentoo)
+    <span id="crud">
+    
         <div class="panel panel-info" style="margin-bottom:20px" id="hist_">
             <div class="panel-body">
 
@@ -30,7 +36,7 @@
 
                     <div class="form-group" style="width:140px;float:left;margin-right:20px">
                         <label for="Peso">Peso (kg)</label>
-                        <input class="form-control" type="text" name="PesoHistorico" class="Peso" value="{{$acompanhamento->Peso}}" disabled/>
+                        <input class="form-control" type="text" name="PesoHistorico" class="Peso" value="" disabled/>
                     </div>
 
                     <div class="form-group" style="width:140px;float:left;margin-right:20px">
@@ -134,7 +140,7 @@
                        
                       
                         <div class="alert alert-" role="alert">
-                          ($historico->peso > 0 && @$aluno->altura > 0):  
+                          
                               "<b>Classificação:</b> ".$classIMC["class"]."<br>"
                               "<b>Risco de doenças crônicas:</b> ".$classIMC["risco"]."<br>"
                           
@@ -150,9 +156,13 @@
             </div>
 
         </div>
-     
+          
     </span>
-    @endforeach
+   <div class="col-sm-5">
+      <pre>
+      @{{ $data }}
+      </pre>
+   </div>
     <!-- FIM DO HISTORICO DA FICHA DE ACOMPANHAMENTO-->
 </form>
 

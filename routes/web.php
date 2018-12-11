@@ -26,6 +26,7 @@ Route::post('/cadastro/savecad', 'SiteController@savecad');
 Route::get('dash', 'SiteController@dash')->name('dash');
 Route::get('/dash/cadastro', 'SiteController@cadastro');
 Route::get('/dash/searchAluno', 'SiteController@searchAluno');
+Route::get('/dash/searchAluno/{id}/acompanhamento', 'SiteController@acompanhamento')->name('aluno.acompanhamento');
 Route::post('login','Auth\LoginController@login')->name('login');
 Route::post('logout','Auth\LoginController@logout')->name('logout');
 
