@@ -73,7 +73,7 @@ class SiteController extends Controller
 
 
 
-         //$fec=$alunos->ConsistenciaFecalId;
+         $fec=$alunos->ConsistenciaFecalId;
         //$re=$fec*2;
         
         //dd( $alunos);
