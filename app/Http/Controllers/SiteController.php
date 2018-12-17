@@ -76,7 +76,7 @@ class SiteController extends Controller
          $fec=$alunos->ConsistenciaFecalId;
         //$re=$fec*2;
         
-        //dd( $alunos);
+     
         
       
       return view('sistema.list', compact('alunos'));
