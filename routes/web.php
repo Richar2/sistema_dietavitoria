@@ -17,8 +17,7 @@
 //});
 
 //Route::get('/dash', 'SiteController@dash');
-//Route::get('/dash/cadastro', 'SiteController@cadastro');
-//Route::post('/cadastro/savecad', 'SiteController@savecad');
+
 
 
 Route::get('/','Auth\LoginController@autetinficado');
